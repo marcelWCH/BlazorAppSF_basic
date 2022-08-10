@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Syncfusion.Blazor;
-//vers. 20.2.0.36/38 -  18.4.0.48
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Njc3MDE4QDMyMzAyZTMyMmUzMFdHck9JTlZuZW1OT1FxZW1MRUxuY0E1RXRRb0t3MU9nK1JrZmxoVUQ4c1k9");
+//vers. 20.2.0.43 / 20.2.0.36/38 -  18.4.0.48
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Njk0NDk4QDMyMzAyZTMyMmUzMGNIOVlhSGVyT2Z1NzU2YjBpQlpNbXVtYjJXYVJsVnI4Rk03NWFCbGpkT2s9");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,8 +23,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddSyncfusionBlazor();
+//builder.Services.AddSyncfusionBlazor();
 
+//builder.Services.AddSyncfusionBlazor(options => { options.IgnoreScriptIsolation = true; });
 //builder.Services.AddSyncfusionBlazor(options => { options.IgnoreScriptIsolation = false; });
 
 
