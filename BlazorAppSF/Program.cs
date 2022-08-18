@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Syncfusion.Blazor;
 //vers. 20.2.0.43 / 20.2.0.36/38 -  18.4.0.48
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Njk0NDk4QDMyMzAyZTMyMmUzMGNIOVlhSGVyT2Z1NzU2YjBpQlpNbXVtYjJXYVJsVnI4Rk03NWFCbGpkT2s9");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(" ");
 
 var builder = WebApplication.CreateBuilder(args);
 
